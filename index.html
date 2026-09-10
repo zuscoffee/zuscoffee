@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
-  <meta name="google-site-verification" content="GoJJe3_BafXIwEo7tX1dHkjtG-6qz8VYmiFc9o2NeGk" />
 
 <!-- ===== PRIMARY SEO ===== -->
 <title>ZUS Coffee Ngupi @ Restoran Pak Haji Ali | White Coffee &amp; Chocolate Coffee RM3.90</title>
@@ -63,6 +62,7 @@
   "currenciesAccepted": "MYR",
   "paymentAccepted": "Cash, QR Pay, Online Transfer",
   "servesCuisine": ["Coffee", "Beverages", "Malaysian", "Iced Coffee"],
+  "hasMap": "https://maps.app.goo.gl/w7EnbTWQzaybo1yW6",
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "MY"
@@ -152,6 +152,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "All drinks are served ice-cold only. We do not serve hot drinks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I choose the sweetness level?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The sweetness level is fixed for all our drinks. We do not offer custom sweetness adjustments."
       }
     },
     {
@@ -511,7 +519,6 @@ body{
 .cart-item .info{flex:1;min-width:0}
 .cart-item .info h4{font-size:14px;font-weight:800;color:var(--text)}
 .cart-item .info .price{font-size:14px;font-weight:800;color:var(--primary)}
-.cart-item .info .request{font-size:11px;color:var(--text-tertiary);font-style:italic;margin-top:2px}
 .cart-item .controls{display:flex;align-items:center;gap:6px;flex-shrink:0}
 .cart-item .controls button{
   width:28px;height:28px;border-radius:50%;background:var(--card-secondary);
@@ -683,17 +690,6 @@ body{
 }
 .modal-qty input:focus{border-color:var(--primary);outline:none}
 
-.modal-request{margin:12px 0 16px}
-.modal-request label{display:block;font-size:12.5px;font-weight:700;color:var(--text-secondary);margin-bottom:6px}
-.modal-request label i{margin-right:4px;color:var(--primary)}
-.modal-request textarea{
-  width:100%;padding:11px 14px;border-radius:var(--radius-sm);
-  border:1px solid var(--separator);background:var(--card-secondary);
-  resize:vertical;font-size:14px;font-family:inherit;transition:var(--transition);color:var(--text);
-}
-.modal-request textarea:focus{border-color:var(--primary);outline:none}
-.modal-request textarea::placeholder{color:var(--text-quaternary)}
-
 .modal-actions{display:flex;flex-direction:column;gap:10px}
 .modal-actions .btn-add{
   background:var(--primary);color:var(--text-inverse);padding:15px;
@@ -860,11 +856,6 @@ body{
       <button id="modalQtyPlus" aria-label="Increase quantity"><i class="fas fa-plus"></i></button>
     </div>
 
-    <div class="modal-request">
-      <label for="modalRequest"><i class="fas fa-pen"></i> Special request (optional)</label>
-      <textarea id="modalRequest" rows="2" placeholder="e.g. less sweet, extra ice..."></textarea>
-    </div>
-
     <div class="modal-actions">
       <button class="btn-add" id="modalAddCart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
       <a class="btn-wa" id="modalWaBtn" href="#" target="_blank" rel="noopener">
@@ -889,11 +880,12 @@ const SHOP = {
   phoneDisplay: "017-656 2062",
   email: "zuscoffeengupi@gmail.com",
   waBase: "https://wa.me/60176562062",
-  siteUrl: "https://zuscoffee.github.io/zuscoffee/"
+  siteUrl: "https://zuscoffee.github.io/zuscoffee/",
+  mapsUrl: "https://maps.app.goo.gl/w7EnbTWQzaybo1yW6"
 };
 
 /* ============================================================
-   MENU DATA — ONLY TWO ITEMS, SERVED COLD
+   MENU DATA — ONLY TWO ITEMS, SERVED COLD, FIXED SWEETNESS
    ============================================================ */
 const MENU_DATA = [
   {
@@ -1062,7 +1054,8 @@ const FALLBACK_IMG =
            Our <strong>White Coffee</strong> is smooth, creamy and comforting,
            while our <strong>Chocolate Coffee</strong> blends rich cocoa with
            freshly brewed coffee for a deeper, sweeter kick.</p>
-        <p>Every cup is made to order and served <strong>ice-cold</strong> at just <strong>RM3.90</strong>.</p>
+        <p>Every cup is made to order and served <strong>ice-cold</strong> at just <strong>RM3.90</strong>.
+           The sweetness level is fixed for consistency.</p>
         <div class="tags">
           <span><i class="fas fa-mug-hot"></i> White Coffee</span>
           <span><i class="fas fa-cookie-bite"></i> Chocolate Coffee</span>
@@ -1091,6 +1084,7 @@ const FALLBACK_IMG =
       <div class="contact-box" style="margin-top:0;">
         <a href="tel:+${SHOP.phoneIntl}"><i class="fas fa-phone"></i> ${SHOP.phoneDisplay}</a>
         <a href="mailto:${SHOP.email}"><i class="fas fa-envelope"></i> ${SHOP.email}</a>
+        <a href="${SHOP.mapsUrl}" target="_blank" rel="noopener"><i class="fas fa-map-pin"></i> Google Maps</a>
         <a href="${SHOP.waBase}" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Order</a>
       </div>
     `;
@@ -1147,7 +1141,7 @@ const FALLBACK_IMG =
       <div class="about-snippet" style="margin-top:18px;">
         <h3>Flat price, <span>every cup</span></h3>
         <p>White Coffee and Chocolate Coffee are both <strong>RM3.90</strong> — no hidden charges.
-           Both are served <strong>ice-cold</strong>, so just tell us your sweetness preference in the special request box.</p>
+           Both are served <strong>ice-cold</strong> with a fixed sweetness level.</p>
       </div>
     `;
 
@@ -1210,7 +1204,6 @@ const FALLBACK_IMG =
           <div class="info">
             <h4>${escapeHtml(item.name)}</h4>
             <div class="price">${fmt(item.price)}</div>
-            ${item.request ? '<div class="request">📝 ' + escapeHtml(item.request) + "</div>" : ""}
           </div>
           <div class="controls">
             <button class="qty-dec" data-idx="${idx}" aria-label="Decrease">−</button>
@@ -1345,6 +1338,7 @@ const FALLBACK_IMG =
         <h4><i class="fas fa-address-card"></i> Contact Us</h4>
         <a href="tel:+${SHOP.phoneIntl}"><i class="fas fa-phone"></i> ${SHOP.phoneDisplay}</a>
         <a href="mailto:${SHOP.email}"><i class="fas fa-envelope"></i> ${SHOP.email}</a>
+        <a href="${SHOP.mapsUrl}" target="_blank" rel="noopener"><i class="fas fa-map-pin"></i> Google Maps</a>
         <a href="${SHOP.waBase}" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
       </div>
 
@@ -1356,6 +1350,9 @@ const FALLBACK_IMG =
         <a href="mailto:${SHOP.email}?subject=${encodeURIComponent("Coffee Order — " + SHOP.name)}">
           <i class="fas fa-envelope"></i> Email Order
         </a>
+        <a href="${SHOP.mapsUrl}" target="_blank" rel="noopener">
+          <i class="fas fa-map-pin"></i> Google Maps
+        </a>
         <a href="#pageMenu" onclick="switchTab('menu');return false;">
           <i class="fas fa-mug-hot"></i> View Menu
         </a>
@@ -1364,7 +1361,7 @@ const FALLBACK_IMG =
       <div class="notice-box">
         <i class="fas fa-circle-info"></i>
         <strong>ZUS Coffee Ngupi @ Restoran Pak Haji Ali</strong> — White Coffee &amp; Chocolate Coffee, RM3.90 per cup.
-        Served ice-cold. Orders placed through this app are sent to our WhatsApp for confirmation.
+        Served ice-cold with a fixed sweetness level. Orders placed through this app are sent to our WhatsApp for confirmation.
       </div>
 
       <div class="notice-box" style="margin-top:12px;border-left-color:var(--separator-heavy);">
@@ -1387,7 +1384,6 @@ const FALLBACK_IMG =
     $("modalDesc").textContent = product.desc || "";
     $("modalPrice").textContent = fmt(product.price);
     $("modalQty").value = 1;
-    $("modalRequest").value = "";
 
     $("iosModal").classList.add("open");
     document.body.style.overflow = "hidden";
@@ -1404,12 +1400,10 @@ const FALLBACK_IMG =
   function updateModalWaLink() {
     if (!modalData) return;
     const qty = Math.max(1, parseInt($("modalQty").value, 10) || 1);
-    const req = $("modalRequest").value.trim();
     const total = modalData.price * qty;
 
     let msg = "Hi " + SHOP.name + "! I'd like to order:\n\n";
     msg += "🧊 " + modalData.name + " ×" + qty + " = " + fmt(total) + "\n";
-    if (req) msg += "📝 Special request: " + req + "\n";
     msg += "\nPlease confirm my order. Thank you! 🙏";
 
     $("modalWaBtn").href = SHOP.waBase + "?text=" + encodeURIComponent(msg);
@@ -1418,9 +1412,8 @@ const FALLBACK_IMG =
   function addFromModal() {
     if (!modalData) return;
     const qty = Math.max(1, parseInt($("modalQty").value, 10) || 1);
-    const req = $("modalRequest").value.trim();
 
-    const idx = cart.findIndex(i => i.name === modalData.name && (i.request || "") === req);
+    const idx = cart.findIndex(i => i.name === modalData.name);
     if (idx !== -1) {
       cart[idx].qty += qty;
     } else {
@@ -1428,8 +1421,7 @@ const FALLBACK_IMG =
         name: modalData.name,
         price: modalData.price,
         qty: qty,
-        img: modalData.img,
-        request: req
+        img: modalData.img
       });
     }
 
@@ -1448,7 +1440,6 @@ const FALLBACK_IMG =
     let msg = "Hi " + SHOP.name + "! I'd like to place an order:\n\n";
     cart.forEach(it => {
       msg += "🧊 " + it.name + " ×" + it.qty + " = " + fmt(it.price * it.qty) + "\n";
-      if (it.request) msg += "   📝 " + it.request + "\n";
     });
     msg += "\n━━━━━━━━━━━━━━\n";
     msg += "Total: " + fmt(total) + "\n\n";
@@ -1565,7 +1556,6 @@ const FALLBACK_IMG =
       updateModalWaLink();
     });
 
-    $("modalRequest").addEventListener("input", updateModalWaLink);
     $("modalAddCart").addEventListener("click", addFromModal);
 
     document.addEventListener("keydown", function (e) {
