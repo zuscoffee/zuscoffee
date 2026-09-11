@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Home -->
+  <url>
+    <loc>https://zuscoffee.github.io/zuscoffee/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://zuscoffee.github.io/zuscoffee/logo.webp</image:loc>
+      <image:title>ZUS Coffee Ngupi @ Restoran Pak Haji Ali</image:title>
+    </image:image>
+  </url>
+
+  <!-- Blog listing -->
+  <url>
+    <loc>https://zuscoffee.github.io/zuscoffee/blog/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog post -->
+  <url>
+    <loc>https://zuscoffee.github.io/zuscoffee/blog/best-coffee-subang-jaya.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://zuscoffee.github.io/zuscoffee/logo.webp</image:loc>
+      <image:title>Best Coffee in Subang Jaya — ZUS Coffee Ngupi</image:title>
+    </image:image>
+  </url>
+
+</urlset>
