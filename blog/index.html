@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+<title>Blog — ZUS Coffee Ngupi @ Restoran Pak Haji Ali</title>
+<meta name="description" content="Coffee guides, stories, and news from ZUS Coffee Ngupi @ Restoran Pak Haji Ali in Subang Jaya. Discover the best ice-cold coffee at RM3.90." />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#0b2a72" />
+<link rel="canonical" href="https://zuscoffee.github.io/zuscoffee/blog/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Blog — ZUS Coffee Ngupi @ Restoran Pak Haji Ali" />
+<meta property="og:description" content="Coffee guides, stories, and news from Subang Jaya's favourite RM3.90 ice-cold coffee spot." />
+<meta property="og:url" content="https://zuscoffee.github.io/zuscoffee/blog/" />
+<meta property="og:image" content="https://zuscoffee.github.io/zuscoffee/logo.webp" />
+
+<link rel="icon" type="image/webp" href="../logo.webp" />
+<link rel="apple-touch-icon" href="../logo.webp" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "ZUS Coffee Ngupi Blog",
+  "url": "https://zuscoffee.github.io/zuscoffee/blog/",
+  "description": "Coffee guides, stories, and news from ZUS Coffee Ngupi @ Restoran Pak Haji Ali.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ZUS Coffee Ngupi @ Restoran Pak Haji Ali",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://zuscoffee.github.io/zuscoffee/logo.webp"
+    }
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zuscoffee.github.io/zuscoffee/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://zuscoffee.github.io/zuscoffee/blog/" }
+  ]
+}
+</script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#f4f6fb;--card:#ffffff;--card-secondary:#f6f8fd;
+  --text:#0f172a;--text-secondary:#475569;--text-tertiary:#8b94a7;
+  --primary:#0b2a72;--primary-light:#1b4bc4;
+  --primary-gradient:linear-gradient(135deg,#0b2a72 0%,#1b4bc4 100%);
+  --separator:#e4e8f1;--shadow:0 2px 16px rgba(11,42,114,.07);
+  --shadow-lg:0 8px 40px rgba(11,42,114,.14);
+  --radius:16px;--radius-sm:12px;--radius-full:9999px;
+  --transition:.25s cubic-bezier(.2,.9,.4,1);
+}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.6;
+  -webkit-font-smoothing:antialiased;min-height:100vh;
+}
+.blog-header{
+  position:sticky;top:0;z-index:100;background:var(--card);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--separator);padding:12px 0;
+}
+.blog-header-inner{
+  max-width:760px;margin:0 auto;padding:0 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.blog-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text)}
+.blog-brand img{width:36px;height:36px;border-radius:50%;object-fit:cover}
+.blog-brand-text strong{display:block;font-size:14px;font-weight:800;line-height:1.1}
+.blog-brand-text span{display:block;font-size:11px;color:var(--text-tertiary);font-weight:600}
+.blog-nav{display:flex;gap:8px}
+.blog-nav a{
+  font-size:13px;font-weight:700;color:var(--text-secondary);text-decoration:none;
+  padding:7px 14px;border-radius:var(--radius-full);transition:var(--transition);
+}
+.blog-nav a.cta{background:var(--primary);color:#fff}
+.blog-nav a:hover{background:var(--card-secondary);color:var(--primary)}
+.blog-nav a.cta:hover{opacity:.9;color:#fff}
+
+.wrap{max-width:760px;margin:0 auto;padding:30px 20px 60px}
+.page-title{font-size:32px;font-weight:800;letter-spacing:-.5px;margin-bottom:6px}
+.page-sub{font-size:15px;color:var(--text-secondary);margin-bottom:28px}
+
+.post-list{display:flex;flex-direction:column;gap:16px}
+.post-card{
+  background:var(--card);border-radius:var(--radius);padding:24px 26px;
+  box-shadow:var(--shadow);border:1px solid var(--separator);
+  text-decoration:none;color:var(--text);transition:var(--transition);
+  display:block;
+}
+.post-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.post-card .tag{
+  display:inline-block;background:var(--card-secondary);color:var(--primary);
+  padding:3px 12px;border-radius:var(--radius-full);
+  font-size:11px;font-weight:800;letter-spacing:.3px;margin-bottom:10px;
+  text-transform:uppercase;
+}
+.post-card h2{font-size:20px;font-weight:800;letter-spacing:-.3px;margin-bottom:8px;line-height:1.3}
+.post-card p{font-size:14.5px;color:var(--text-secondary);margin-bottom:12px}
+.post-card .meta{font-size:12.5px;color:var(--text-tertiary);font-weight:600}
+.post-card .meta i{margin-right:5px}
+
+footer{
+  text-align:center;padding:24px 20px;border-top:1px solid var(--separator);
+  background:var(--card);font-size:13px;color:var(--text-tertiary);
+}
+footer a{color:var(--primary);text-decoration:none;font-weight:700}
+
+@media (max-width:600px){
+  .page-title{font-size:24px}
+  .post-card{padding:20px 20px}
+  .post-card h2{font-size:17px}
+}
+</style>
+</head>
+<body>
+
+<header class="blog-header">
+  <div class="blog-header-inner">
+    <a href="../" class="blog-brand">
+      <img src="../logo.webp" alt="ZUS Coffee Ngupi" />
+      <div class="blog-brand-text">
+        <strong>ZUS Coffee Ngupi</strong>
+        <span>@ Restoran Pak Haji Ali</span>
+      </div>
+    </a>
+    <nav class="blog-nav">
+      <a href="../" class="cta"><i class="fas fa-mug-hot"></i> Order</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1 class="page-title">Blog</h1>
+  <p class="page-sub">Coffee stories, guides, and updates from Subang Jaya.</p>
+
+  <div class="post-list">
+    <a class="post-card" href="best-coffee-subang-jaya.html">
+      <span class="tag">Coffee Guide</span>
+      <h2>Best Coffee in Subang Jaya: Why Ngupi's RM3.90 Ice-Cold Cups Are Winning Hearts</h2>
+      <p>From price to freshness, here's why locals keep coming back to ZUS Coffee Ngupi @ Restoran Pak Haji Ali.</p>
+      <div class="meta">
+        <i class="fas fa-calendar"></i> 11 September 2026
+        &nbsp;·&nbsp;
+        <i class="fas fa-clock"></i> 5 min read
+      </div>
+    </a>
+  </div>
+</main>
+
+<footer>
+  © 2026 <a href="../">ZUS Coffee Ngupi @ Restoran Pak Haji Ali</a>
+</footer>
+
+</body>
+</html>
