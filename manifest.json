@@ -1,0 +1,26 @@
+{
+  "name": "ZUS Coffee Ngupi @ Restoran Pak Haji Ali",
+  "short_name": "Ngupi Coffee",
+  "description": "Ice-cold White Coffee & Chocolate Coffee for RM3.90. Order via WhatsApp.",
+  "start_url": "/zuscoffee/",
+  "scope": "/zuscoffee/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b2a72",
+  "theme_color": "#0b2a72",
+  "lang": "en-MY",
+  "icons": [
+    {
+      "src": "logo.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}
