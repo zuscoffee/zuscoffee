@@ -22,7 +22,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Blog post -->
+  <!-- Blog post 1 -->
   <url>
     <loc>https://zuscoffee.github.io/zuscoffee/blog/best-coffee-subang-jaya.html</loc>
     <lastmod>2026-09-11</lastmod>
@@ -31,6 +31,18 @@
     <image:image>
       <image:loc>https://zuscoffee.github.io/zuscoffee/logo.webp</image:loc>
       <image:title>Best Coffee in Subang Jaya — ZUS Coffee Ngupi</image:title>
+    </image:image>
+  </url>
+
+  <!-- Blog post 2 -->
+  <url>
+    <loc>https://zuscoffee.github.io/zuscoffee/blog/best-zus-coffee-ngupi-outlet-malaysia.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://zuscoffee.github.io/zuscoffee/logo.webp</image:loc>
+      <image:title>The Best ZUS Coffee Ngupi Outlet in Malaysia — ZUS Coffee Ngupi</image:title>
     </image:image>
   </url>
 
