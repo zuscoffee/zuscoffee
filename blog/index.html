@@ -1,50 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en-MY" data-theme="light">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-
-<title>Blog — ZUS Coffee Ngupi @ Restoran Pak Haji Ali</title>
-<meta name="description" content="Coffee guides, stories, and news from ZUS Coffee Ngupi @ Restoran Pak Haji Ali in Subang Jaya. Discover the best ice-cold coffee at RM3.90." />
+<title>ZUS Coffee Ngupi Blog — Coffee Guides &amp; Menu Updates</title>
+<meta name="description" content="Read the latest from ZUS Coffee Ngupi @ Restoran Pak Haji Ali. Menu guides, price updates, and the best places to get ice-cold White Coffee and Chocolate Coffee in Subang Jaya." />
 <meta name="robots" content="index, follow, max-image-preview:large" />
-<meta name="theme-color" content="#0b2a72" />
 <link rel="canonical" href="https://zuscoffee.github.io/zuscoffee/blog/" />
-
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Blog — ZUS Coffee Ngupi @ Restoran Pak Haji Ali" />
-<meta property="og:description" content="Coffee guides, stories, and news from Subang Jaya's favourite RM3.90 ice-cold coffee spot." />
-<meta property="og:url" content="https://zuscoffee.github.io/zuscoffee/blog/" />
-<meta property="og:image" content="https://zuscoffee.github.io/zuscoffee/logo.webp" />
-
+<meta name="theme-color" content="#0b2a72" id="themeColor" />
 <link rel="icon" type="image/webp" href="../logo.webp" />
-<link rel="apple-touch-icon" href="../logo.webp" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
+<!-- Structured Data: Blog -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Blog",
+  "@id": "https://zuscoffee.github.io/zuscoffee/blog/#blog",
   "name": "ZUS Coffee Ngupi Blog",
+  "description": "Coffee guides, menu updates, and local recommendations for ZUS Coffee Ngupi @ Restoran Pak Haji Ali in Subang Jaya.",
   "url": "https://zuscoffee.github.io/zuscoffee/blog/",
-  "description": "Coffee guides, stories, and news from ZUS Coffee Ngupi @ Restoran Pak Haji Ali.",
   "publisher": {
     "@type": "Organization",
     "name": "ZUS Coffee Ngupi @ Restoran Pak Haji Ali",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://zuscoffee.github.io/zuscoffee/logo.webp"
+    "logo": { "@type": "ImageObject", "url": "https://zuscoffee.github.io/zuscoffee/logo.webp" }
+  },
+  "blogPost": [
+    {
+      "@type": "BlogPosting",
+      "headline": "ZUS Coffee Ngupi Menu & Prices 2026: White Coffee & Chocolate Coffee at RM3.90",
+      "url": "https://zuscoffee.github.io/zuscoffee/blog/zus-coffee-ngupi-menu-prices.html",
+      "datePublished": "2026-10-12"
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "The Best ZUS Coffee Ngupi Outlet in Malaysia Is in Subang Jaya — Here's Why",
+      "url": "https://zuscoffee.github.io/zuscoffee/blog/best-zus-coffee-ngupi-outlet-malaysia.html",
+      "datePublished": "2026-09-11"
     }
-  }
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zuscoffee.github.io/zuscoffee/" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://zuscoffee.github.io/zuscoffee/blog/" }
   ]
 }
 </script>
@@ -52,116 +45,142 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --bg:#f4f6fb;--card:#ffffff;--card-secondary:#f6f8fd;
-  --text:#0f172a;--text-secondary:#475569;--text-tertiary:#8b94a7;
-  --primary:#0b2a72;--primary-light:#1b4bc4;
-  --primary-gradient:linear-gradient(135deg,#0b2a72 0%,#1b4bc4 100%);
-  --separator:#e4e8f1;--shadow:0 2px 16px rgba(11,42,114,.07);
-  --shadow-lg:0 8px 40px rgba(11,42,114,.14);
-  --radius:16px;--radius-sm:12px;--radius-full:9999px;
-  --transition:.25s cubic-bezier(.2,.9,.4,1);
+  --bg:#f4f6fb; --card:#ffffff; --card-secondary:#f6f8fd; --text:#0f172a; --text-secondary:#475569;
+  --text-tertiary:#8b94a7; --primary:#0b2a72; --primary-light:#1b4bc4; --primary-gradient:linear-gradient(135deg,#0b2a72 0%,#1b4bc4 100%);
+  --accent:#ffc800; --separator:#e4e8f1; --shadow:0 2px 16px rgba(11,42,114,.07); --shadow-lg:0 8px 40px rgba(11,42,114,.14);
+  --radius:16px; --radius-sm:12px; --radius-full:9999px; --transition:.25s cubic-bezier(.2,.9,.4,1);
 }
-body{
-  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
-  background:var(--bg);color:var(--text);line-height:1.6;
-  -webkit-font-smoothing:antialiased;min-height:100vh;
+[data-theme="dark"]{
+  --bg:#080b14; --card:#121826; --card-secondary:#1b2333; --text:#f1f5fd; --text-secondary:#a8b3c9;
+  --text-tertiary:#7d879c; --primary:#ffc800; --primary-light:#ffd633; --separator:#242e42;
+  --shadow:0 2px 16px rgba(0,0,0,.5); --shadow-lg:0 8px 40px rgba(0,0,0,.6);
 }
-.blog-header{
-  position:sticky;top:0;z-index:100;background:var(--card);
-  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--separator);padding:12px 0;
-}
-.blog-header-inner{
-  max-width:760px;margin:0 auto;padding:0 20px;
-  display:flex;align-items:center;justify-content:space-between;gap:12px;
-}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-thumb{background:var(--separator);border-radius:20px}
+
+.blog-header{position:sticky;top:0;z-index:100;background:var(--card);backdrop-filter:blur(20px);border-bottom:1px solid var(--separator);padding:12px 0}
+.blog-header-inner{max-width:760px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .blog-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text)}
-.blog-brand img{width:36px;height:36px;border-radius:50%;object-fit:cover}
+.blog-brand img{width:36px;height:36px;border-radius:50%;object-fit:cover;box-shadow:0 3px 12px rgba(11,42,114,.3)}
 .blog-brand-text strong{display:block;font-size:14px;font-weight:800;line-height:1.1}
 .blog-brand-text span{display:block;font-size:11px;color:var(--text-tertiary);font-weight:600}
-.blog-nav{display:flex;gap:8px}
-.blog-nav a{
-  font-size:13px;font-weight:700;color:var(--text-secondary);text-decoration:none;
-  padding:7px 14px;border-radius:var(--radius-full);transition:var(--transition);
-}
-.blog-nav a.cta{background:var(--primary);color:#fff}
+.blog-nav{display:flex;gap:8px;align-items:center}
+.blog-nav a{font-size:13px;font-weight:700;color:var(--text-secondary);text-decoration:none;padding:7px 14px;border-radius:var(--radius-full);transition:var(--transition)}
 .blog-nav a:hover{background:var(--card-secondary);color:var(--primary)}
-.blog-nav a.cta:hover{opacity:.9;color:#fff}
+.blog-nav a.cta{background:var(--primary);color:#fff}
+.theme-toggle{background:var(--card-secondary);border:1px solid var(--separator);width:36px;height:36px;border-radius:50%;cursor:pointer;color:var(--text);display:flex;align-items:center;justify-content:center;font-size:15px;transition:var(--transition)}
+.theme-toggle:hover{transform:scale(1.08)}
 
-.wrap{max-width:760px;margin:0 auto;padding:30px 20px 60px}
-.page-title{font-size:32px;font-weight:800;letter-spacing:-.5px;margin-bottom:6px}
-.page-sub{font-size:15px;color:var(--text-secondary);margin-bottom:28px}
+.page-wrap{max-width:760px;margin:0 auto;padding:30px 20px 60px}
+.page-hero{background:var(--primary-gradient);border-radius:var(--radius);padding:34px 30px;color:#fff;margin-bottom:28px;position:relative;overflow:hidden;box-shadow:0 10px 30px rgba(11,42,114,.28)}
+.page-hero::after{content:"📝";position:absolute;right:-10px;bottom:-20px;font-size:120px;opacity:.10;transform:rotate(-8deg);pointer-events:none}
+.page-hero h1{font-size:28px;font-weight:800;line-height:1.2;letter-spacing:-.5px;margin-bottom:10px}
+.page-hero p{font-size:15px;color:rgba(255,255,255,.9);max-width:500px}
 
-.post-list{display:flex;flex-direction:column;gap:16px}
-.post-card{
-  background:var(--card);border-radius:var(--radius);padding:24px 26px;
-  box-shadow:var(--shadow);border:1px solid var(--separator);
-  text-decoration:none;color:var(--text);transition:var(--transition);
-  display:block;
-}
+.posts-grid{display:grid;grid-template-columns:1fr;gap:20px}
+.post-card{background:var(--card);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);border:1px solid var(--separator);transition:var(--transition);text-decoration:none;color:inherit;display:block}
 .post-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
-.post-card .tag{
-  display:inline-block;background:var(--card-secondary);color:var(--primary);
-  padding:3px 12px;border-radius:var(--radius-full);
-  font-size:11px;font-weight:800;letter-spacing:.3px;margin-bottom:10px;
-  text-transform:uppercase;
-}
-.post-card h2{font-size:20px;font-weight:800;letter-spacing:-.3px;margin-bottom:8px;line-height:1.3}
-.post-card p{font-size:14.5px;color:var(--text-secondary);margin-bottom:12px}
-.post-card .meta{font-size:12.5px;color:var(--text-tertiary);font-weight:600}
+.post-card .tag{display:inline-block;background:var(--card-secondary);color:var(--primary);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;padding:4px 12px;border-radius:var(--radius-full);margin-bottom:12px;border:1px solid var(--separator)}
+.post-card h2{font-size:20px;font-weight:800;color:var(--text);line-height:1.35;margin-bottom:8px;letter-spacing:-.3px}
+.post-card p{font-size:14.5px;color:var(--text-secondary);margin-bottom:14px;line-height:1.6}
+.post-card .meta{display:flex;align-items:center;gap:14px;font-size:12.5px;color:var(--text-tertiary);font-weight:600}
 .post-card .meta i{margin-right:5px}
 
-footer{
-  text-align:center;padding:24px 20px;border-top:1px solid var(--separator);
-  background:var(--card);font-size:13px;color:var(--text-tertiary);
-}
-footer a{color:var(--primary);text-decoration:none;font-weight:700}
+.blog-footer{border-top:1px solid var(--separator);padding:24px 20px;text-align:center;font-size:13px;color:var(--text-tertiary);background:var(--card)}
+.blog-footer a{color:var(--primary);text-decoration:none;font-weight:700}
 
 @media (max-width:600px){
-  .page-title{font-size:24px}
-  .post-card{padding:20px 20px}
-  .post-card h2{font-size:17px}
+  .page-hero{padding:26px 22px}
+  .page-hero h1{font-size:23px}
+  .post-card{padding:20px}
+  .post-card h2{font-size:18px}
+  .blog-nav a{font-size:12px;padding:6px 12px}
 }
 </style>
 </head>
 <body>
-
 <header class="blog-header">
   <div class="blog-header-inner">
     <a href="../" class="blog-brand">
-      <img src="../logo.webp" alt="ZUS Coffee Ngupi" />
+      <img src="../logo.webp" alt="ZUS Coffee Ngupi logo" />
       <div class="blog-brand-text">
         <strong>ZUS Coffee Ngupi</strong>
         <span>@ Restoran Pak Haji Ali</span>
       </div>
     </a>
     <nav class="blog-nav">
+      <a href="../">Home</a>
       <a href="../" class="cta"><i class="fas fa-mug-hot"></i> Order</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon" id="themeIcon"></i></button>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
-  <h1 class="page-title">Blog</h1>
-  <p class="page-sub">Coffee stories, guides, and updates from Subang Jaya.</p>
+<main class="page-wrap">
+  <div class="page-hero">
+    <h1>The ZUS Coffee Ngupi Blog</h1>
+    <p>Menu guides, price updates, and everything you need to know about ice-cold Malaysian coffee in Subang Jaya.</p>
+  </div>
 
-  <div class="post-list">
-    <a class="post-card" href="best-coffee-subang-jaya.html">
-      <span class="tag">Coffee Guide</span>
-      <h2>Best Coffee in Subang Jaya: Why Ngupi's RM3.90 Ice-Cold Cups Are Winning Hearts</h2>
-      <p>From price to freshness, here's why locals keep coming back to ZUS Coffee Ngupi @ Restoran Pak Haji Ali.</p>
+  <div class="posts-grid">
+    <!-- Post 1 -->
+    <a href="zus-coffee-ngupi-menu-prices.html" class="post-card">
+      <span class="tag">Menu &amp; Prices</span>
+      <h2>ZUS Coffee Ngupi Menu &amp; Prices 2026: White Coffee &amp; Chocolate Coffee at RM3.90</h2>
+      <p>The complete menu guide. What's in each cup, why the price stays at RM3.90, and the four ways to order right now.</p>
       <div class="meta">
-        <i class="fas fa-calendar"></i> 11 September 2026
-        &nbsp;·&nbsp;
-        <i class="fas fa-clock"></i> 5 min read
+        <span><i class="fas fa-calendar"></i> 12 Oct 2026</span>
+        <span><i class="fas fa-clock"></i> 9 min read</span>
+      </div>
+    </a>
+
+    <!-- Post 2 -->
+    <a href="best-zus-coffee-ngupi-outlet-malaysia.html" class="post-card">
+      <span class="tag">Outlet Guide</span>
+      <h2>The Best ZUS Coffee Ngupi Outlet in Malaysia Is in Subang Jaya — Here's Why</h2>
+      <p>Why this outlet consistently beats the rest — consistency, price, location, and local love.</p>
+      <div class="meta">
+        <span><i class="fas fa-calendar"></i> 11 Sep 2026</span>
+        <span><i class="fas fa-clock"></i> 6 min read</span>
+      </div>
+    </a>
+
+    <!-- Post 3 -->
+    <a href="best-coffee-subang-jaya.html" class="post-card">
+      <span class="tag">Local Guide</span>
+      <h2>Best Coffee in Subang Jaya: Why Ngupi Stands Out</h2>
+      <p>A local's guide to the best coffee spots in Subang Jaya, and why ZUS Coffee Ngupi is the one people keep coming back to.</p>
+      <div class="meta">
+        <span><i class="fas fa-calendar"></i> 11 Sep 2026</span>
+        <span><i class="fas fa-clock"></i> 5 min read</span>
       </div>
     </a>
   </div>
 </main>
 
-<footer>
-  © 2026 <a href="../">ZUS Coffee Ngupi @ Restoran Pak Haji Ali</a>
+<footer class="blog-footer">
+  <p>© 2026 <a href="../">ZUS Coffee Ngupi @ Restoran Pak Haji Ali</a> — Subang Jaya, Selangor</p>
 </footer>
 
+<script>
+(function(){
+  var root = document.documentElement;
+  var toggle = document.getElementById("themeToggle");
+  var icon = document.getElementById("themeIcon");
+  var saved = "light";
+  try { saved = localStorage.getItem("ngupi-theme") || "light"; } catch(e) {}
+  function apply(theme){
+    root.setAttribute("data-theme", theme);
+    try { localStorage.setItem("ngupi-theme", theme); } catch(e){}
+    icon.className = theme === "dark" ? "fas fa-sun" : "fas fa-moon";
+  }
+  apply(saved);
+  toggle.addEventListener("click", function(){
+    var cur = root.getAttribute("data-theme") || "light";
+    apply(cur === "light" ? "dark" : "light");
+  });
+})();
+</script>
 </body>
 </html>
