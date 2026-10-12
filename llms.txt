@@ -10,6 +10,12 @@
 ## Blog & Guides
 - [Best ZUS Coffee Ngupi Outlet in Malaysia](https://zuscoffee.github.io/zuscoffee/blog/best-zus-coffee-ngupi-outlet-malaysia.html): Why the Subang Jaya outlet stands out from the rest.
 - [Best Coffee in Subang Jaya](https://zuscoffee.github.io/zuscoffee/blog/best-coffee-subang-jaya.html): A local's guide to coffee in Subang Jaya.
+## Location Guides
+- [Coffee Near Subang Jaya](https://zuscoffee.github.io/zuscoffee/blog/best-coffee-subang-jaya.html): The physical location. Best value coffee in Subang Jaya.
+- [Coffee Near Puchong](https://zuscoffee.github.io/zuscoffee/blog/best-coffee-puchong.html): 15 minutes from Bandar Puteri. Worth the drive for RM3.90 coffee.
+- [Coffee Near Shah Alam](https://zuscoffee.github.io/zuscoffee/blog/best-coffee-shah-alam.html): 12 minutes from Kota Kemuning, 20 minutes from Seksyen 13.
+- [Coffee Near Kuala Lumpur](https://zuscoffee.github.io/zuscoffee/blog/best-coffee-kuala-lumpur.html): RM3.90 vs KL's RM15–RM25 specialty coffee scene.
+- [All Locations](https://zuscoffee.github.io/zuscoffee/blog/locations/): Hub page listing all service areas.
 
 ## Ordering
 - [Web App](https://zuscoffee.github.io/zuscoffee/): Browse the menu and send your order directly to WhatsApp.
