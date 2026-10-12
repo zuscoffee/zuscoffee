@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-MY" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>404 — Page Not Found | ZUS Coffee Ngupi</title>
+<meta name="robots" content="noindex, follow" />
+<link rel="icon" type="image/webp" href="logo.webp" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#f4f6fb;--card:#ffffff;--text:#0f172a;--text-secondary:#475569;--primary:#0b2a72;--primary-gradient:linear-gradient(135deg,#0b2a72 0%,#1b4bc4 100%);--separator:#e4e8f1;--radius:16px;--radius-full:9999px}
+[data-theme="dark"]{--bg:#080b14;--card:#121826;--text:#f1f5fd;--text-secondary:#a8b3c9;--primary:#ffc800;--separator:#242e42}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text);display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px;text-align:center}
+.wrap{max-width:480px;width:100%}
+.logo{width:80px;height:80px;border-radius:50%;background:var(--primary-gradient);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;font-size:36px;box-shadow:0 8px 26px rgba(11,42,114,.35);overflow:hidden}
+.logo img{width:100%;height:100%;object-fit:cover}
+h1{font-size:64px;font-weight:800;color:var(--primary);letter-spacing:-2px;line-height:1;margin-bottom:10px}
+h2{font-size:20px;font-weight:800;margin-bottom:8px}
+p{font-size:15px;color:var(--text-secondary);margin-bottom:24px;line-height:1.6}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#fff;padding:14px 28px;border-radius:var(--radius-full);font-weight:800;font-size:15px;text-decoration:none;transition:.25s}
+.btn:hover{transform:translateY(-2px);opacity:.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo"><img src="logo.webp" alt="ZUS Coffee Ngupi logo" /></div>
+  <h1>404</h1>
+  <h2>Page Not Found</h2>
+  <p>The page you're looking for doesn't exist. But our ice-cold White Coffee and Chocolate Coffee do — both RM3.90.</p>
+  <a href="https://zuscoffee.github.io/zuscoffee/" class="btn"><i class="fas fa-mug-hot"></i> Back to Home</a>
+</div>
+<script>
+(function(){
+  var root = document.documentElement;
+  var saved = "light";
+  try { saved = localStorage.getItem("ngupi-theme") || "light"; } catch(e) {}
+  root.setAttribute("data-theme", saved);
+})();
+</script>
+</body>
+</html>
