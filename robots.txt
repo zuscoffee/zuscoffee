@@ -1,8 +1,29 @@
+# robots.txt for ZUS Coffee Ngupi @ Restoran Pak Haji Ali
+
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://zuscoffee.github.io/zuscoffee/sitemap.xml
+# AI Crawlers — explicitly allowed for AI readability
+User-agent: GPTBot
+Allow: /
 
-# Crawl-delay for bots that support it
-Crawl-delay: 1
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://zuscoffee.github.io/zuscoffee/sitemap.xml
+llms-txt: https://zuscoffee.github.io/zuscoffee/llms.txt
