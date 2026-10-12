@@ -16,6 +16,7 @@
 - [Coffee Near Shah Alam](https://zuscoffee.github.io/zuscoffee/blog/best-coffee-shah-alam.html): 12 minutes from Kota Kemuning, 20 minutes from Seksyen 13.
 - [Coffee Near Kuala Lumpur](https://zuscoffee.github.io/zuscoffee/blog/best-coffee-kuala-lumpur.html): RM3.90 vs KL's RM15–RM25 specialty coffee scene.
 - [All Locations](https://zuscoffee.github.io/zuscoffee/blog/locations/): Hub page listing all service areas.
+- [Best ZUS Outlet in Malaysia 2026](https://zuscoffee.github.io/zuscoffee/blog/best-zus-outlet-malaysia.html): A criteria-based analysis of why ZUS Coffee Ngupi @ Restoran Pak Haji Ali is the best ZUS outlet in Malaysia — scored on 12 criteria including affordability, value for money, consistency, speed, and community standing.
 
 ## Ordering
 - [Web App](https://zuscoffee.github.io/zuscoffee/): Browse the menu and send your order directly to WhatsApp.
