@@ -5,7 +5,7 @@
   <!-- Home -->
   <url>
     <loc>https://zuscoffee.github.io/zuscoffee/</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -22,47 +22,83 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Blog post 1 -->
+  <!-- Locations hub -->
   <url>
-    <loc>https://zuscoffee.github.io/zuscoffee/blog/best-coffee-subang-jaya.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <loc>https://zuscoffee.github.io/zuscoffee/blog/locations/</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- Menu & Prices -->
+  <url>
+    <loc>https://zuscoffee.github.io/zuscoffee/blog/zus-coffee-ngupi-menu-prices.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://zuscoffee.github.io/zuscoffee/logo.webp</image:loc>
-      <image:title>Best Coffee in Subang Jaya — ZUS Coffee Ngupi</image:title>
+      <image:loc>https://zuscoffee.github.io/zuscoffee/images/whitecoffee.webp</image:loc>
+      <image:title>ZUS Coffee Ngupi White Coffee — RM3.90</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zuscoffee.github.io/zuscoffee/images/chocolatecoffee.webp</image:loc>
+      <image:title>ZUS Coffee Ngupi Chocolate Coffee — RM3.90</image:title>
     </image:image>
   </url>
 
-  <!-- Blog post 2 -->
+  <!-- Blog: Best ZUS Coffee Ngupi Outlet Malaysia -->
   <url>
     <loc>https://zuscoffee.github.io/zuscoffee/blog/best-zus-coffee-ngupi-outlet-malaysia.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- Location: Subang Jaya -->
+  <url>
+    <loc>https://zuscoffee.github.io/zuscoffee/blog/best-coffee-subang-jaya.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
-      <image:loc>https://zuscoffee.github.io/zuscoffee/logo.webp</image:loc>
-      <image:title>The Best ZUS Coffee Ngupi Outlet in Malaysia — ZUS Coffee Ngupi</image:title>
+      <image:loc>https://zuscoffee.github.io/zuscoffee/images/whitecoffee.webp</image:loc>
+      <image:title>Best Coffee in Subang Jaya — ZUS Coffee Ngupi</image:title>
     </image:image>
   </url>
 
-  <!-- Blog post 3 (NEW) -->
+  <!-- Location: Puchong -->
   <url>
-    <loc>https://zuscoffee.github.io/zuscoffee/blog/zus-coffee-ngupi-menu-prices.html</loc>
+    <loc>https://zuscoffee.github.io/zuscoffee/blog/best-coffee-puchong.html</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
     <image:image>
       <image:loc>https://zuscoffee.github.io/zuscoffee/images/whitecoffee.webp</image:loc>
-      <image:title>ZUS Coffee Ngupi White Coffee — RM3.90, served ice-cold</image:title>
+      <image:title>Best Coffee in Puchong — ZUS Coffee Ngupi White Coffee RM3.90</image:title>
     </image:image>
+  </url>
+
+  <!-- Location: Shah Alam -->
+  <url>
+    <loc>https://zuscoffee.github.io/zuscoffee/blog/best-coffee-shah-alam.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
       <image:loc>https://zuscoffee.github.io/zuscoffee/images/chocolatecoffee.webp</image:loc>
-      <image:title>ZUS Coffee Ngupi Chocolate Coffee — RM3.90, served ice-cold</image:title>
+      <image:title>Best Coffee Near Shah Alam — ZUS Coffee Ngupi</image:title>
     </image:image>
+  </url>
+
+  <!-- Location: Kuala Lumpur -->
+  <url>
+    <loc>https://zuscoffee.github.io/zuscoffee/blog/best-coffee-kuala-lumpur.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <image:image>
       <image:loc>https://zuscoffee.github.io/zuscoffee/logo.webp</image:loc>
-      <image:title>ZUS Coffee Ngupi @ Restoran Pak Haji Ali logo</image:title>
+      <image:title>Best Value Coffee in Kuala Lumpur — ZUS Coffee Ngupi</image:title>
     </image:image>
   </url>
 
