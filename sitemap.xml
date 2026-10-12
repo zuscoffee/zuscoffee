@@ -17,7 +17,7 @@
   <!-- Blog listing -->
   <url>
     <loc>https://zuscoffee.github.io/zuscoffee/blog/</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -43,6 +43,26 @@
     <image:image>
       <image:loc>https://zuscoffee.github.io/zuscoffee/logo.webp</image:loc>
       <image:title>The Best ZUS Coffee Ngupi Outlet in Malaysia — ZUS Coffee Ngupi</image:title>
+    </image:image>
+  </url>
+
+  <!-- Blog post 3 (NEW) -->
+  <url>
+    <loc>https://zuscoffee.github.io/zuscoffee/blog/zus-coffee-ngupi-menu-prices.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://zuscoffee.github.io/zuscoffee/images/whitecoffee.webp</image:loc>
+      <image:title>ZUS Coffee Ngupi White Coffee — RM3.90, served ice-cold</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zuscoffee.github.io/zuscoffee/images/chocolatecoffee.webp</image:loc>
+      <image:title>ZUS Coffee Ngupi Chocolate Coffee — RM3.90, served ice-cold</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zuscoffee.github.io/zuscoffee/logo.webp</image:loc>
+      <image:title>ZUS Coffee Ngupi @ Restoran Pak Haji Ali logo</image:title>
     </image:image>
   </url>
 
