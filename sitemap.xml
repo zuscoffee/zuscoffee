@@ -102,4 +102,20 @@
     </image:image>
   </url>
 
+        <!-- Outlet: Best ZUS in Malaysia -->
+<url>
+  <loc>https://zuscoffee.github.io/zuscoffee/blog/best-zus-outlet-malaysia.html</loc>
+  <lastmod>2026-10-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://zuscoffee.github.io/zuscoffee/images/whitecoffee.webp</image:loc>
+    <image:title>Best ZUS Coffee Outlet in Malaysia — White Coffee RM3.90</image:title>
+  </image:image>
+  <image:image>
+    <image:loc>https://zuscoffee.github.io/zuscoffee/images/chocolatecoffee.webp</image:loc>
+    <image:title>ZUS Coffee Ngupi Chocolate Coffee — RM3.90, ice-cold</image:title>
+  </image:image>
+</url>
+
 </urlset>
