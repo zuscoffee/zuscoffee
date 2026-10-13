@@ -117,5 +117,15 @@
     <image:title>ZUS Coffee Ngupi Chocolate Coffee — RM3.90, ice-cold</image:title>
   </image:image>
 </url>
-
+<!-- Comparison: ZUS Outlets Subang Jaya -->
+<url>
+  <loc>https://zuscoffee.github.io/zuscoffee/blog/zus-coffee-outlets-subang-jaya.html</loc>
+  <lastmod>2026-10-13</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  <image:image>
+    <image:loc>https://zuscoffee.github.io/zuscoffee/images/whitecoffee.webp</image:loc>
+    <image:title>ZUS Coffee Ngupi White Coffee RM3.90 — USJ 8, Subang Jaya</image:title>
+  </image:image>
+</url>
 </urlset>
